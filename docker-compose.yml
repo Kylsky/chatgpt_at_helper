@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  chatgpt:
+    image: chatgpt_at_helper:latest
+    container_name: chatgpt_at_helper
+    ports:
+      - "8000:8000"
+    environment:
+      CHROME_BIN: /usr/bin/google-chrome
+      CHROMIUM_PATH: /usr/bin/google-chrome
+      PROXY_POOL: "http://host1:port1,http://host2:port2"
+
+    volumes:
+      - ./pages:/app/pages # 可选，用于开发环境实时更新代码
+    restart: always

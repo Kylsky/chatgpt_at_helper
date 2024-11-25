@@ -1,2 +1,6 @@
-DrissionPage==4.1.0.9
-PyVirtualDisplay==3.0
+DrissionPage>=4.0.0
+fastapi>=0.68.0
+uvicorn>=0.15.0
+pydantic>=1.8.0
+python-multipart>=0.0.5
+curl_cffi
