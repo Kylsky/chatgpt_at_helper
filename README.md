@@ -5,3 +5,7 @@
 
 灵感源自：
 https://github.com/hmhm2022/gpt-cursor-auto
+
+使用方法：
+curl -X POST "http://localhost:8000/login" \\n     -H "Content-Type: application/json" \\n     -d '{"email":"你的邮箱","password":"你的密码"}'
+
